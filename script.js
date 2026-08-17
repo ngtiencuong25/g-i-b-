@@ -1,0 +1,4 @@
+const openBtn=document.getElementById('openLetter');const envelope=document.getElementById('envelope');const card=document.getElementById('letterCard');const wrap=document.getElementById('envelopeWrap');const letter=document.getElementById('letter');
+openBtn.addEventListener('click',()=>{letter.scrollIntoView({behavior:'smooth'});setTimeout(()=>{envelope.classList.add('open');setTimeout(()=>{card.classList.add('show');card.scrollIntoView({behavior:'smooth',block:'center'});},900)},450)});
+document.getElementById('again').addEventListener('click',()=>{card.classList.remove('show');envelope.classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('seen')}),{threshold:.12});document.querySelectorAll('.memory,.quote').forEach(x=>io.observe(x));
