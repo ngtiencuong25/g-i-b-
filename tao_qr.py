@@ -1,6 +1,6 @@
 import qrcode
 
-url = "https://TEN-GITHUB-CUA-BON.github.io/thu-gui-bo/"
+url = "https://ngtiencuong25.github.io/g-i-b-/"
 
 qr = qrcode.QRCode(
     version=1,
@@ -19,4 +19,4 @@ img = qr.make_image(
 
 img.save("QR_Thu_Gui_Bo.png")
 
-print("✅ Đã tạo QR: QR_Thu_Gui_Bo.png")
+print("✅ Đã tạo QR_Thu_Gui_Bo.png")
